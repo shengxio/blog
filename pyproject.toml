@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "roland's blog"
+version = "0.1.0"
+description = "This is a my self intro and blog page."
+authors = ["Sheng Xiong Ding <shengxio@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.40.1"
+pandas = "^2.2.3"
+python-decouple = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
