@@ -7,20 +7,20 @@ st.title("Blog Posts")
 
 # You can store your blog posts as dictionaries
 blog_posts = [
-    {
-        "title": "Getting Started with Data Science",
-        "date": "2024-03-15",
-        "preview": "A beginner's guide to starting your journey in data science...",
-        "tags": ["Data Science", "Beginner", "Guide"],
-        "read_time": "5 min read"
-    },
-    {
-        "title": "Machine Learning Best Practices",
-        "date": "2024-03-10",
-        "preview": "Essential tips and tricks for improving your ML models...",
-        "tags": ["Machine Learning", "Tips", "Best Practices"],
-        "read_time": "8 min read"
-    },
+    # {
+    #     "title": "Getting Started with Data Science",
+    #     "date": "2024-03-15",
+    #     "preview": "A beginner's guide to starting your journey in data science...",
+    #     "tags": ["Data Science", "Beginner", "Guide"],
+    #     "read_time": "5 min read"
+    # },
+    # {
+    #     "title": "Machine Learning Best Practices",
+    #     "date": "2024-03-10",
+    #     "preview": "Essential tips and tricks for improving your ML models...",
+    #     "tags": ["Machine Learning", "Tips", "Best Practices"],
+    #     "read_time": "8 min read"
+    # },
     # Add more blog posts here
 ]
 
