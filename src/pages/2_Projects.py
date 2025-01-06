@@ -49,6 +49,18 @@ projects = [
         "tags": ["Python", "Machine Learning", "Data Science","Temperature Prediction", "Cold Chain", "IoT", "Predictive Analytics", "Real-Time Monitoring", "Logistics"]
     },
     {
+        "title":"Transportation Vehicle Co-pilot project",
+        "description":"Developed a Transportation Vehicle Co-pilot system integrating machine learning and large language models to provide context-aware navigation, real-time weather insights, and predictive guidance. This solution interprets natural language commands, adapts to driver preferences, and continuously improves through learning from historical trip data, resulting in enhanced route recommendations and a more intuitive user experience.",
+        "image": "",
+        "tags": ["Python","Large Language Model","Machine Learning","Data Science","Transportation","Proof of Concept","Predictive Analytics","Context Awareness"]
+    },
+    {
+        "title":"Autonomous Algae Incubation System",
+        "description":"Developed an autonomous algae incubation system that optimally regulates environmental conditions such as temperature, lighting, nutrient flow, and CO₂ concentration. Using real-time sensor inputs and automated control loops, the system dynamically adapts to maintain ideal growth parameters, improving algae yields and supporting sustainable biofuel and bioproduct production.",
+        "image":"",
+        "tags":["Python","Autonomous System","Bioreactor","Environmental Control","Data Analysis","Sustainability","Biofuel","Smart Farming"]
+    },
+    {
         "title": "Meeting Stickers: NLP-Driven Insights for Government Meeting Notes",
         "description":"GovNotes Analyzer is a project that harnesses the power of natural language processing (NLP) to process and analyze meeting notes from government sources. By extracting key insights and actionable items, the tool simplifies complex discussions into detailed, digestible outputs. Designed to enhance transparency and efficiency, GovNotes Analyzer aids stakeholders in identifying priorities and driving meaningful actions from government proceedings.",
         "image":"",
@@ -60,7 +72,6 @@ projects = [
         "image": "project2.jpg",
         "tags": ["Python", "Kaggle", "Bioinformatics","Genetic Engineering", "Sequencing Analysis", "Machine Learning", "Laboratory Identification", "Genomic Data", "Traceability"]
     },
-
     {
         'title':"Residential and Industrial Load Analysis & Arc Flash Study",
         "description":"This project involved conducting comprehensive electrical load analyses for both residential and industrial facilities. The aim was to assess and optimize power distribution systems to ensure reliability and efficiency. A detailed short circuit study was performed to evaluate the system's response to electrical faults and identify potential hazards. Additionally, an arc flash study was conducted to enhance workplace safety by determining incident energy levels and establishing appropriate protection measures. The results supported the design of robust electrical infrastructures, ensuring compliance with safety standards and regulations.",
