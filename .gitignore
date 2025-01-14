@@ -8,3 +8,5 @@
 .ssh/
 .sudo_as_admin_successful
 .venv/
+
+__pycache__/
