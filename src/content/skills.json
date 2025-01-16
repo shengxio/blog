@@ -13,11 +13,13 @@
     },
     "programming": {
         "Python": 10,
+        "R": 8,
         "HTML": 8,
         "JavaScript": 6,
         "CSS": 7,
         "SQL": 9,
         "PLC": 7
+
     },
     "libraries": {
         "Streamlit": 9,
