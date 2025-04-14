@@ -1,0 +1,42 @@
+[
+    {
+        "title": "AI and Machine Learning Solutions",
+        "description": "Custom AI model development tailored to your business needs, advanced data analytics, and predictive modeling, including fine-tuning large language models (LLMs) for specific applications.",
+        "tags": ["Data Science", "Feature Engineering", "Python", "Keras", "Scikit-learn", "pandas", "AWS", "Azure", "GCP", "Jupyter Notebook", "Data Structure"]
+    },
+    {
+        "title": "Data Science Consulting",
+        "description": "End-to-end data pipeline creation (ETL/ELT) for structured and unstructured data, cloud-based analytics solutions using AWS and GCP, and advanced statistical analysis for actionable insights.",
+        "tags": ["Data Analytics", "Data Science", "Python", "SQL", "pandas", "AWS", "GCP", "Data Structure", "Matplotlib", "Seaborn"]
+    },
+    {
+        "title": "Dashboard Design and Visualization",
+        "description": "Interactive and scalable dashboards for data-driven decision-making, streamlined visualizations using tools like Plotly, Pydeck, and Streamlit, with a focus on fleet industry-specific reporting interfaces.",
+        "tags": ["System Design", "Data Analytics", "Python", "Streamlit", "HTML", "CSS", "JavaScript", "React", "Matplotlib", "Seaborn"]
+    },
+    {
+        "title": "AI-Powered Curriculum Development",
+        "description": "Custom AI and data science training programs for professionals, as well as curriculum design to upskill teams in startups and organizations.",
+        "tags": ["Product Development", "Team Leadership", "Python", "Jupyter Notebook", "Google Collab", "Keras", "Scikit-learn", "pandas"]
+    },
+    {
+        "title": "Software Engineering for AI Applications",
+        "description": "Backend API development using FastAPI, Kubernetes and Helm-based deployments, and Infrastructure as Code (IaC) solutions with Terraform and Azure integration.",
+        "tags": ["Solution Architecture", "System Design", "Python", "FastAPI", "Docker", "Azure", "AWS", "pydantic", "Git"]
+    },
+    {
+        "title": "NLP and Text Analytics",
+        "description": "Natural Language Processing for meeting notes, chatbots, and content analysis, including solutions for text truthfulness and accuracy evaluations.",
+        "tags": ["Data Science", "Feature Engineering", "Python", "Spacy", "Flask", "FastAPI", "Open API", "Web-Scraping"]
+    },
+    {
+        "title": "Startup and Business Ideation Support",
+        "description": "Technical research and AI strategy for startups, MVP development for AI-based projects, and ideation support for leveraging cutting-edge AI technologies.",
+        "tags": ["Project Management", "Product Development", "Research & Development", "Python", "Gradio", "Streamlit", "FastAPI", "Git", "Docker"]
+    },
+    {
+        "title": "Custom Solutions",
+        "description": "Tailored consulting for unique business problems, exploring innovative applications of distributed computing, parallelism, and emerging AI trends.",
+        "tags": ["Solution Architecture", "Industrial Automation", "Python", "AWS", "Azure", "GCP", "Docker", "Data Structure"]
+    }
+]
