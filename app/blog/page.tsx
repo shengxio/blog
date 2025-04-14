@@ -5,6 +5,19 @@ import BlogPost from '../components/BlogPost';
 import Filter from '../components/Filter';
 import posts from '../../content/posts.json';
 
+type Post = {
+  title: string;
+  date: string;
+  preview: string;
+  description?: string;
+  tags: string[];
+  read_time: string;
+};
+
+type PostsByCategory = {
+  [key: string]: Post[];
+};
+
 export default function BlogPage() {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -28,18 +41,18 @@ export default function BlogPage() {
 
   // Filter posts based on selected categories and tags
   const filteredPosts = useMemo(() => {
-    let result: typeof posts.self = [];
+    let result: Post[] = [];
     
     // If no categories selected, show all posts
     if (selectedCategories.length === 0) {
-      Object.values(posts).forEach(categoryPosts => {
+      Object.values(posts as PostsByCategory).forEach(categoryPosts => {
         result = [...result, ...categoryPosts];
       });
     } else {
       // Show posts from selected categories
       selectedCategories.forEach(category => {
-        if (posts[category as keyof typeof posts]) {
-          result = [...result, ...posts[category as keyof typeof posts]];
+        if ((posts as PostsByCategory)[category]) {
+          result = [...result, ...(posts as PostsByCategory)[category]];
         }
       });
     }
@@ -78,6 +91,7 @@ export default function BlogPage() {
                 title={post.title}
                 date={post.date}
                 preview={post.preview}
+                description={post.description}
                 tags={post.tags}
                 read_time={post.read_time}
               />
