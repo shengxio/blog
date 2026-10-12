@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 export default function Sidebar() {
   return (
-    <aside className="w-64 h-screen fixed left-0 top-0 bg-white dark:bg-gray-800 p-6 border-r border-gray-200 dark:border-gray-700">
-      <div className="flex flex-col items-center mb-8">
-        <div className="relative w-32 h-32 mb-4 rounded-full overflow-hidden">
+    <aside className="w-full bg-white p-4 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 md:fixed md:left-0 md:top-0 md:h-screen md:w-64 md:overflow-y-auto md:border-b-0 md:border-r md:p-6">
+      <div className="mb-4 flex items-center gap-3 md:mb-8 md:flex-col md:gap-0">
+        <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full md:mb-4 md:h-32 md:w-32">
           <Image
             src="/portrait.png"
             alt="Sheng Xiong Ding"
@@ -14,34 +14,36 @@ export default function Sidebar() {
             priority
           />
         </div>
-        <h2 className="text-xl font-bold">Sheng Xiong Ding (Roland)</h2>
-        <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
+        <div className="min-w-0 md:text-center">
+          <h2 className="text-base font-bold md:text-xl">Sheng Xiong Ding (Roland)</h2>
+          <p className="text-xs text-gray-600 dark:text-gray-400 md:text-sm">
           Data Scientist | AI & ML Specialist | Solutions Architect
-        </p>
+          </p>
+        </div>
       </div>
 
-      <nav className="space-y-2">
+      <nav className="grid grid-cols-4 gap-1 md:block md:space-y-2">
         <Link 
           href="/"
-          className="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+          className="block rounded-lg px-2 py-2 text-center text-sm hover:bg-gray-100 dark:hover:bg-gray-700 md:px-4 md:text-left md:text-base"
         >
           Home
         </Link>
         <Link 
           href="/blog"
-          className="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+          className="block rounded-lg px-2 py-2 text-center text-sm hover:bg-gray-100 dark:hover:bg-gray-700 md:px-4 md:text-left md:text-base"
         >
           Blog
         </Link>
         <Link 
           href="/projects"
-          className="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+          className="block rounded-lg px-2 py-2 text-center text-sm hover:bg-gray-100 dark:hover:bg-gray-700 md:px-4 md:text-left md:text-base"
         >
           Projects
         </Link>
         <Link 
           href="/skills"
-          className="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+          className="block rounded-lg px-2 py-2 text-center text-sm hover:bg-gray-100 dark:hover:bg-gray-700 md:px-4 md:text-left md:text-base"
         >
           Skills
         </Link>

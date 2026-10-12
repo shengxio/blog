@@ -74,15 +74,15 @@ export default function BlogPage() {
 
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div className="md:col-span-1">
+      <div className="grid grid-cols-1 gap-8 xl:grid-cols-4">
+        <div className="min-w-0 xl:col-span-1">
           <Filter
             categories={categories}
             tags={tags}
             onFilterChange={handleFilterChange}
           />
         </div>
-        <div className="md:col-span-3">
+        <div className="min-w-0 xl:col-span-3">
           <h1 className="text-4xl font-bold mb-8">Blog Posts</h1>
           <div className="space-y-6">
             {filteredPosts.map((post, index) => (

@@ -9,11 +9,11 @@ export default function SkillCategory({ title, skills }: SkillCategoryProps) {
       <h2 className="text-2xl font-bold mb-6 line-clamp-1">{title}</h2>
       <div className="space-y-4">
         {Object.entries(skills).map(([skill, value]) => (
-          <div key={skill} className="flex items-center justify-between">
-            <span className="text-gray-700 dark:text-gray-300 line-clamp-1">{skill}</span>
+          <div key={skill} className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+            <span className="min-w-0 text-gray-700 dark:text-gray-300">{skill}</span>
             {typeof value === 'number' ? (
-              <div className="flex items-center">
-                <div className="w-32 h-2 bg-gray-200 dark:bg-gray-700 rounded-full mr-2">
+              <div className="flex shrink-0 items-center">
+                <div className="mr-2 h-2 w-32 shrink-0 rounded-full bg-gray-200 dark:bg-gray-700">
                   <div
                     className="h-full bg-blue-500 rounded-full"
                     style={{ width: `${value * 10}%` }}
@@ -24,7 +24,7 @@ export default function SkillCategory({ title, skills }: SkillCategoryProps) {
                 </span>
               </div>
             ) : (
-              <div className="flex flex-wrap gap-2 justify-end">
+              <div className="flex flex-wrap justify-start gap-2 md:justify-end">
                 {value.map((item, index) => (
                   <span
                     key={index}
