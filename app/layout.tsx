@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import Sidebar from './components/Sidebar'
 
 export const metadata: Metadata = {
-  title: 'Sheng Xiong Ding - Data Science & Machine Learning',
-  description: 'Personal website of Sheng Xiong Ding (Roland) - Data Scientist, AI & ML Specialist, and Solutions Architect',
+  title: 'Sheng Xiong Ding - Portfolio',
+  description: 'Python tools, web projects, and an industrial automation and electrical engineering background.',
 }
 
 export default function RootLayout({

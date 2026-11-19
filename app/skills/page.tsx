@@ -1,26 +1,26 @@
 import SkillCategory from '../components/SkillCategory';
-import CloudServices from '../components/CloudServices';
 import skills from '../../content/skills.json';
 
 export default function SkillsPage() {
   return (
-    <div className="max-w-6xl mx-auto">
-      <h1 className="text-4xl font-bold mb-8">Skills & Expertise</h1>
-      <div 
-        className="grid grid-cols-1 gap-8 xl:grid-cols-2" 
-        style={{ 
-          gridAutoRows: 'min-content',
-          gridAutoFlow: 'dense'
-        }}
-      >
-        <SkillCategory title="Roles & Responsibilities" skills={skills.roles} />
-        <SkillCategory title="Programming Languages" skills={skills.programming} />
-        <SkillCategory title="Libraries & Frameworks" skills={skills.libraries} />
-        <SkillCategory title="Tools & Technologies" skills={skills.tools} />
-      </div>
-      <div className="mt-8">
-        <CloudServices platforms={skills.deployments} />
-      </div>
+    <div className="mx-auto max-w-6xl">
+      <h1 className="mb-8 text-4xl font-bold">Skills</h1>
+      <section aria-labelledby="software-skills">
+        <h2 id="software-skills" className="mb-4 text-2xl font-bold">Software and data</h2>
+        <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
+          {skills.software.map((skill) => (
+            <SkillCategory key={skill.title} {...skill} />
+          ))}
+        </div>
+      </section>
+      <section aria-labelledby="engineering-skills" className="mt-8">
+        <h2 id="engineering-skills" className="mb-4 text-2xl font-bold">Industrial and electrical engineering</h2>
+        <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
+          {skills.engineering.map((skill) => (
+            <SkillCategory key={skill.title} {...skill} />
+          ))}
+        </div>
+      </section>
     </div>
   );
 } 

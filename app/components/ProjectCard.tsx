@@ -1,27 +1,28 @@
 interface ProjectCardProps {
   title: string;
+  category: string;
+  kind: string;
   description: string;
-  image?: string;
-  tags: string[];
+  sourceUrl?: string;
 }
 
-export default function ProjectCard({ title, description, image, tags }: ProjectCardProps) {
+export default function ProjectCard({ title, category, kind, description, sourceUrl }: ProjectCardProps) {
   return (
-    <article className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden h-fit">
-      <div className="p-6">
-        <h2 className="text-2xl font-bold mb-4 line-clamp-2">{title}</h2>
-        <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-4">{description}</p>
-        <div className="flex flex-wrap gap-2">
-          {tags.map((tag, index) => (
-            <span
-              key={index}
-              className="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-      </div>
+    <article className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800">
+      <h2 className="mb-2 text-2xl font-bold">{title}</h2>
+      <p className="mb-3 text-sm text-gray-600 dark:text-gray-400">
+        {category} <span aria-hidden="true">/</span> {kind}
+      </p>
+      <p className="text-gray-700 dark:text-gray-300">{description}</p>
+      {sourceUrl && (
+        <a
+          href={sourceUrl}
+          aria-label={`${title} source code`}
+          className="mt-3 inline-block text-blue-700 underline dark:text-blue-300"
+        >
+          Source code
+        </a>
+      )}
     </article>
   );
-} 
+}

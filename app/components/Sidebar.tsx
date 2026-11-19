@@ -10,6 +10,7 @@ export default function Sidebar() {
             src="/portrait.png"
             alt="Sheng Xiong Ding"
             fill
+            sizes="(min-width: 768px) 128px, 56px"
             className="object-cover"
             priority
           />
@@ -17,23 +18,17 @@ export default function Sidebar() {
         <div className="min-w-0 md:text-center">
           <h2 className="text-base font-bold md:text-xl">Sheng Xiong Ding (Roland)</h2>
           <p className="text-xs text-gray-600 dark:text-gray-400 md:text-sm">
-          Data Scientist | AI & ML Specialist | Solutions Architect
+            Python tools, web development, and industrial automation
           </p>
         </div>
       </div>
 
-      <nav className="grid grid-cols-4 gap-1 md:block md:space-y-2">
+      <nav className="grid grid-cols-3 gap-1 md:block md:space-y-2">
         <Link 
           href="/"
           className="block rounded-lg px-2 py-2 text-center text-sm hover:bg-gray-100 dark:hover:bg-gray-700 md:px-4 md:text-left md:text-base"
         >
           Home
-        </Link>
-        <Link 
-          href="/blog"
-          className="block rounded-lg px-2 py-2 text-center text-sm hover:bg-gray-100 dark:hover:bg-gray-700 md:px-4 md:text-left md:text-base"
-        >
-          Blog
         </Link>
         <Link 
           href="/projects"
