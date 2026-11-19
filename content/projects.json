@@ -1,16 +1,20 @@
-[
-    {
-        "title": "Personal Portfolio",
-        "category": "Web & AI",
-        "kind": "Personal project",
-        "description": "A responsive site showcasing selected projects and the skills behind them.",
-        "sourceUrl": "https://github.com/shengxio/blog"
-    },
-    {
-        "title": "Directory Scan",
-        "category": "Data & ML",
-        "kind": "Personal project",
-        "description": "A Python utility that inventories files and folders and exports Excel reports.",
-        "sourceUrl": "https://github.com/shengxio/Directory_Scan"
-    }
-]
+{
+    "title": "Projects",
+    "sourceLinkLabel": "Source code",
+    "items": [
+        {
+            "title": "Personal Portfolio",
+            "category": "Web & AI",
+            "kind": "Personal project",
+            "description": "A responsive site showcasing selected projects and the skills behind them.",
+            "sourceUrl": "https://github.com/shengxio/blog"
+        },
+        {
+            "title": "Directory Scan",
+            "category": "Data & ML",
+            "kind": "Personal project",
+            "description": "A Python utility that inventories files and folders and exports Excel reports.",
+            "sourceUrl": "https://github.com/shengxio/Directory_Scan"
+        }
+    ]
+}

@@ -65,7 +65,8 @@ The owner's involvement is confirmed. The copy below remains an option only if t
 
 ## Implementation and follow-up
 
-- The [Home copy](../../app/page.tsx), [site sidebar](../../app/components/Sidebar.tsx), and [metadata](../../app/layout.tsx) use the narrower wording. [Skills](../../app/skills/page.tsx) describes work in two groups and links only to public examples.
+- Edit the bio and contact details in [home.json](../../content/home.json), and the shared profile, navigation, and metadata in [site.json](../../content/site.json). The [portrait](../../content/images/portrait.png) lives alongside the site content.
+- Edit project cards in [projects.json](../../content/projects.json) and skill groups and examples in [skills.json](../../content/skills.json). The source content is bundled at build time; a production update requires a rebuild and redeploy.
 - The [Projects page](../../app/projects/page.tsx) features the two verified entries with category and kind, without a filter sidebar. If the project collection grows, filter by category rather than reintroducing a long stack-tag list.
 - The blog was removed to keep the site focused on Home, Projects, and Skills.
 - For each remaining candidate, confirm what you personally did, whether it was a concept, a demo, or a deployment, and what can be shared. Private work does not need a public repository; a short approved role statement is enough.

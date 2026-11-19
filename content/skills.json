@@ -1,42 +1,53 @@
 {
-    "software": [
+    "title": "Skills",
+    "groups": [
         {
-            "title": "Python scripting and data handling",
-            "description": "I use Python and pandas to prepare data, automate routine processing, and generate reports.",
-            "example": {
-                "label": "Directory Scan source",
-                "url": "https://github.com/shengxio/Directory_Scan"
-            }
+            "id": "software-skills",
+            "title": "Software and data",
+            "items": [
+                {
+                    "title": "Python scripting and data handling",
+                    "description": "I use Python and pandas to prepare data, automate routine processing, and generate reports.",
+                    "example": {
+                        "label": "Directory Scan source",
+                        "url": "https://github.com/shengxio/Directory_Scan"
+                    }
+                },
+                {
+                    "title": "Frontend development",
+                    "description": "I built this portfolio with React, Next.js, TypeScript, and Tailwind CSS, using reusable components and responsive layouts.",
+                    "example": {
+                        "label": "Portfolio source",
+                        "url": "https://github.com/shengxio/blog"
+                    }
+                },
+                {
+                    "title": "Data analysis and predictive modeling",
+                    "description": "I analyze sensor data, prepare inputs for models, and build models to predict changes in measured conditions."
+                },
+                {
+                    "title": "AI and language prototyping",
+                    "description": "I prototype tools that summarize documents, extract information from text, or let users ask questions in natural language."
+                }
+            ]
         },
         {
-            "title": "Frontend development",
-            "description": "I built this portfolio with React, Next.js, TypeScript, and Tailwind CSS, using reusable components and responsive layouts.",
-            "example": {
-                "label": "Portfolio source",
-                "url": "https://github.com/shengxio/blog"
-            }
-        },
-        {
-            "title": "Data analysis and predictive modeling",
-            "description": "I analyze sensor data, prepare inputs for models, and build models to predict changes in measured conditions."
-        },
-        {
-            "title": "AI and language prototyping",
-            "description": "I prototype tools that summarize documents, extract information from text, or let users ask questions in natural language."
-        }
-    ],
-    "engineering": [
-        {
-            "title": "Industrial automation and controls",
-            "description": "I work with sensor-based monitoring and feedback controls for industrial equipment."
-        },
-        {
-            "title": "Electrical analysis and design",
-            "description": "I work on electrical load and safety studies, as well as power distribution and equipment design."
-        },
-        {
-            "title": "Prototyping and testing",
-            "description": "I work from design requirements through prototyping, testing, and quality checks for electrical products."
+            "id": "engineering-skills",
+            "title": "Industrial and electrical engineering",
+            "items": [
+                {
+                    "title": "Industrial automation and controls",
+                    "description": "I work with sensor-based monitoring and feedback controls for industrial equipment."
+                },
+                {
+                    "title": "Electrical analysis and design",
+                    "description": "I work on electrical load and safety studies, as well as power distribution and equipment design."
+                },
+                {
+                    "title": "Prototyping and testing",
+                    "description": "I work from design requirements through prototyping, testing, and quality checks for electrical products."
+                }
+            ]
         }
     ]
 }

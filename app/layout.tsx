@@ -1,11 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import Sidebar from './components/Sidebar'
+import site from '../content/site.json'
 
-export const metadata: Metadata = {
-  title: 'Sheng Xiong Ding - Portfolio',
-  description: 'Python tools, web projects, and an industrial automation and electrical engineering background.',
-}
+export const metadata: Metadata = site.metadata
 
 export default function RootLayout({
   children,
@@ -13,7 +11,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="h-full">
+    <html lang={site.language} className="h-full">
       <body className="min-h-screen bg-gray-50 dark:bg-gray-900">
         <div className="flex min-h-screen flex-col md:flex-row">
           <Sidebar />

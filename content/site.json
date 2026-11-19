@@ -1,0 +1,17 @@
+{
+    "language": "en",
+    "metadata": {
+        "title": "Sheng Xiong Ding - Portfolio",
+        "description": "Python tools, web projects, and an industrial automation and electrical engineering background."
+    },
+    "profile": {
+        "name": "Sheng Xiong Ding (Roland)",
+        "tagline": "Python tools, web development, and industrial automation",
+        "portraitAlt": "Sheng Xiong Ding"
+    },
+    "navigation": [
+        { "label": "Home", "href": "/" },
+        { "label": "Projects", "href": "/projects" },
+        { "label": "Skills", "href": "/skills" }
+    ]
+}

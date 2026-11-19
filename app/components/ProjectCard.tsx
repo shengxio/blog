@@ -4,9 +4,10 @@ interface ProjectCardProps {
   kind: string;
   description: string;
   sourceUrl?: string;
+  sourceLinkLabel: string;
 }
 
-export default function ProjectCard({ title, category, kind, description, sourceUrl }: ProjectCardProps) {
+export default function ProjectCard({ title, category, kind, description, sourceUrl, sourceLinkLabel }: ProjectCardProps) {
   return (
     <article className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800">
       <h2 className="mb-2 text-2xl font-bold">{title}</h2>
@@ -17,10 +18,10 @@ export default function ProjectCard({ title, category, kind, description, source
       {sourceUrl && (
         <a
           href={sourceUrl}
-          aria-label={`${title} source code`}
+          aria-label={`${sourceLinkLabel}: ${title}`}
           className="mt-3 inline-block text-blue-700 underline dark:text-blue-300"
         >
-          Source code
+          {sourceLinkLabel}
         </a>
       )}
     </article>

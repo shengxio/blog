@@ -1,0 +1,21 @@
+{
+    "about": {
+        "title": "About Me",
+        "bio": "I build Python tools for data and reporting and web projects with React and Next.js. My background is in industrial automation and electrical engineering."
+    },
+    "contact": {
+        "title": "Contact",
+        "detailsTitle": "Get in Touch",
+        "socialTitle": "Connect",
+        "email": "shengxio@gmail.com",
+        "location": "Canada",
+        "linkedin": {
+            "label": "LinkedIn",
+            "url": "https://www.linkedin.com/in/sheng-xiong-ding/"
+        },
+        "github": {
+            "label": "GitHub",
+            "url": "https://github.com/shengxio"
+        }
+    }
+}
