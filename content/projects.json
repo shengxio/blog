@@ -1,20 +1,119 @@
 {
-    "title": "Projects",
+    "title": "Project archive",
+    "intro": "Work across software, data, and industrial engineering, from personal experiments to applied engineering projects.",
     "sourceLinkLabel": "Source code",
+    "featured": {
+        "title": "MiMinions",
+        "label": "Current work",
+        "description": "Building an individual AI agent is one thing. Getting several agents to coordinate their work is a different problem.",
+        "focus": "That’s the idea behind MiMinions: a platform for autonomous organizations, where AI agents can divide work, coordinate, and bring their results together.",
+        "availableLabel": "Available today",
+        "available": "The public Python framework includes configurable agents, a command-line interface, and local workspaces.",
+        "concept": {
+            "caption": "Concept sketch, not a product screenshot",
+            "steps": [
+                { "title": "Set a shared goal", "description": "Define what the group should accomplish." },
+                { "title": "Divide the work", "description": "Give agents distinct tasks to work on." },
+                { "title": "Bring results together", "description": "Combine the outputs into something useful." }
+            ]
+        },
+        "sourceUrl": "https://github.com/MiMinions-ai/MiMinions",
+        "sourceLinkLabel": "Explore the public code"
+    },
     "items": [
         {
             "title": "Personal Portfolio",
             "category": "Web & AI",
             "kind": "Personal project",
-            "description": "A responsive site showcasing selected projects and the skills behind them.",
+            "description": "A responsive personal website that brings my software and engineering work together.",
+            "tags": ["Portfolio Website", "Next.js", "Responsive Design"],
             "sourceUrl": "https://github.com/shengxio/blog"
         },
         {
             "title": "Directory Scan",
             "category": "Data & ML",
             "kind": "Personal project",
-            "description": "A Python utility that inventories files and folders and exports Excel reports.",
+            "description": "A utility that takes a snapshot of a folder and its contents.",
+            "tags": ["File Inventory", "Python", "pandas", "Excel Reports"],
             "sourceUrl": "https://github.com/shengxio/Directory_Scan"
+        },
+        {
+            "title": "Lanterns",
+            "category": "Web & AI",
+            "kind": "Experiment",
+            "description": "A browser extension project exploring chat-based help for reading articles.",
+            "tags": ["Browser Extension", "JavaScript", "Article Summaries"],
+            "sourceUrl": "https://github.com/lanterns-fun/lanterns-chrome"
+        },
+        {
+            "title": "Lamp",
+            "category": "Data & ML",
+            "kind": "Experiment",
+            "description": "An experiment in using machine learning to analyze online articles.",
+            "tags": ["Content Analysis", "Machine Learning", "Text Processing"]
+        },
+        {
+            "title": "Cold Chain Temperature Prediction",
+            "category": "Data & ML",
+            "kind": "Engineering work",
+            "description": "A project on predicting product temperatures in refrigerated transport.",
+            "tags": ["Cold Chain", "Sensor Data", "Temperature Forecasts"]
+        },
+        {
+            "title": "Transportation Copilot",
+            "category": "Web & AI",
+            "kind": "Demo",
+            "description": "A demo exploring natural-language access to trip and weather information.",
+            "tags": ["Transportation Assistant", "Large Language Models", "Trip & Weather Q&A"]
+        },
+        {
+            "title": "Algae Incubation Controls",
+            "category": "Industrial & Electrical",
+            "kind": "Engineering work",
+            "description": "A controls project for monitoring and regulating an algae incubation system.",
+            "tags": ["Industrial Controls", "Feedback Control", "Sensor Monitoring"]
+        },
+        {
+            "title": "Meeting Stickers",
+            "category": "Data & ML",
+            "kind": "Experiment",
+            "description": "An experiment that turns public meeting notes into a quick reference.",
+            "tags": ["Meeting Notes", "Natural Language Processing", "Meeting Summaries", "Action Items"]
+        },
+        {
+            "title": "Kaggle Attribution Challenge",
+            "category": "Data & ML",
+            "kind": "Competition",
+            "description": "A Kaggle machine learning project on source attribution.",
+            "tags": ["Source Attribution", "Machine Learning", "Feature Engineering"]
+        },
+        {
+            "title": "Electrical Load & Arc Flash Study",
+            "category": "Industrial & Electrical",
+            "kind": "Engineering work",
+            "description": "Electrical load analysis and an arc flash study for residential and industrial facilities.",
+            "tags": ["Power Systems", "Short-Circuit Analysis", "Incident Energy Estimates"]
+        },
+        {
+            "title": "Pipeline Heat Tracing",
+            "category": "Industrial & Electrical",
+            "kind": "Engineering work",
+            "description": "Electrical heat tracing work for pipeline temperature maintenance.",
+            "tags": ["Pipeline Heating", "Thermal Design", "Commissioning"]
+        },
+        {
+            "title": "Switchgear Design",
+            "category": "Industrial & Electrical",
+            "kind": "Engineering work",
+            "description": "Design work on low- and medium-voltage switchgear.",
+            "tags": ["Power Distribution", "Equipment Design", "Prototype Testing"]
+        },
+        {
+            "title": "Solar & LED Street Lighting",
+            "category": "Industrial & Electrical",
+            "kind": "Engineering work",
+            "description": "Product design and delivery work for solar and LED street lighting.",
+            "tags": ["Solar Power", "LED Lighting", "Product Design"]
         }
     ]
 }

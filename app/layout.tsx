@@ -12,10 +12,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang={site.language} className="h-full">
-      <body className="min-h-screen bg-gray-50 dark:bg-gray-900">
-        <div className="flex min-h-screen flex-col md:flex-row">
+      <body className="min-h-screen">
+        <div className="mx-auto grid min-h-screen max-w-[86rem] md:grid-cols-[12.5rem_minmax(0,1fr)] lg:grid-cols-[14rem_minmax(0,1fr)]">
           <Sidebar />
-          <main className="min-w-0 flex-1 p-4 sm:p-6 md:ml-64 md:p-8">
+          <main className="min-w-0 px-5 pb-10 sm:px-8 lg:px-12 xl:px-16">
             {children}
           </main>
         </div>

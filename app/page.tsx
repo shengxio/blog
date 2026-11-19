@@ -1,68 +1,83 @@
 import { about, contact } from '../content/home.json';
+import { featured } from '../content/projects.json';
+import ProjectsSection from './components/ProjectsSection';
+import SkillsSection from './components/SkillsSection';
 
 export default function Home() {
   return (
-    <div className="max-w-6xl mx-auto">
-      <div className="grid grid-cols-1 gap-8 xl:grid-cols-4">
-        <div className="xl:col-span-1">
-          <div className="rounded-lg bg-white p-4 shadow-md dark:bg-gray-800 sm:p-6 xl:sticky xl:top-8">
-            <h2 className="text-2xl font-bold mb-6">{contact.title}</h2>
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-1">
-              <div>
-                <h3 className="text-lg font-semibold mb-4">{contact.detailsTitle}</h3>
-                <div className="space-y-4">
-                  <div className="flex min-w-0 items-center">
-                    <svg className="mr-3 h-6 w-6 shrink-0 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    <a href={`mailto:${contact.email}`} className="min-w-0 break-all text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400">
-                      {contact.email}
-                    </a>
-                  </div>
-                  <div className="flex min-w-0 items-center">
-                    <svg className="mr-3 h-6 w-6 shrink-0 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    <span className="text-gray-600 dark:text-gray-300">{contact.location}</span>
-                  </div>
+    <div className="mx-auto max-w-5xl">
+      <section id="about" aria-labelledby="about-heading" className="scroll-mt-6 pb-10 pt-12 sm:pb-14 sm:pt-16 lg:pt-20">
+        <p className="mb-4 font-mono text-xs font-semibold uppercase tracking-widest text-primary">{about.eyebrow}</p>
+        <h1 id="about-heading" className="max-w-3xl text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
+          {about.title}
+        </h1>
+        <p className="mt-5 max-w-[38rem] text-lg leading-relaxed text-muted-foreground sm:text-xl">{about.bio}</p>
+        <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+          <a href="#miminions" className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
+            {about.currentWorkLinkLabel}<span aria-hidden="true">&darr;</span>
+          </a>
+          <a href="#projects" className="text-sm font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">
+            {about.archiveLinkLabel}
+          </a>
+        </div>
+      </section>
+
+      <section id="miminions" aria-labelledby="miminions-heading" className="grid scroll-mt-6 gap-8 rounded-xl border border-border bg-card p-5 sm:p-8 xl:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
+        <div>
+          <p className="mb-3 font-mono text-xs font-semibold uppercase tracking-widest text-primary">{featured.label}</p>
+          <h2 id="miminions-heading" className="text-3xl font-semibold tracking-tight sm:text-4xl">{featured.title}</h2>
+          <p className="mt-4 max-w-prose text-lg font-medium leading-relaxed">{featured.description}</p>
+          <p className="mt-3 max-w-prose leading-relaxed text-muted-foreground">{featured.focus}</p>
+          <p className="mt-5 max-w-prose border-l-2 border-primary/40 pl-3 text-sm leading-relaxed text-muted-foreground">
+            <strong className="font-semibold text-foreground">{featured.availableLabel}:</strong> {featured.available}
+          </p>
+          <a href={featured.sourceUrl} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">
+            {featured.sourceLinkLabel}<span aria-hidden="true">&#8599;</span>
+          </a>
+        </div>
+        <figure className="self-center rounded-lg border border-border bg-accent p-4 sm:p-5">
+          <figcaption className="mb-4 font-mono text-xs uppercase tracking-wide text-muted-foreground">{featured.concept.caption}</figcaption>
+          <ol role="list" className="divide-y divide-border">
+            {featured.concept.steps.map(({ title, description }, index) => (
+              <li key={title} className="grid grid-cols-[2rem_minmax(0,1fr)] gap-3 py-3 first:pt-0 last:pb-0">
+                <span aria-hidden="true" className="flex h-8 w-8 items-center justify-center rounded-full border border-primary/25 font-mono text-xs font-semibold text-primary">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <div>
+                  <p className="text-sm font-semibold">{title}</p>
+                  <p className="mt-0.5 text-sm leading-relaxed text-muted-foreground">{description}</p>
                 </div>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-4">{contact.socialTitle}</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center">
-                    <svg className="w-6 h-6 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                    <a href={contact.linkedin.url} target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">
-                      {contact.linkedin.label}
-                    </a>
-                  </div>
-                  <div className="flex items-center">
-                    <svg className="w-6 h-6 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                    <a href={contact.github.url} target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400">
-                      {contact.github.label}
-                    </a>
-                  </div>
-                </div>
-              </div>
+              </li>
+            ))}
+          </ol>
+        </figure>
+      </section>
+
+      <ProjectsSection />
+      <SkillsSection />
+
+      <footer id="contact" aria-labelledby="contact-heading" className="mt-14 scroll-mt-6 border-t border-border pt-7 sm:mt-16">
+        <h2 id="contact-heading" className="text-2xl font-semibold tracking-tight">{contact.title}</h2>
+        <div className="mt-5 grid gap-5 sm:grid-cols-2">
+          <div>
+            <h3 className="mb-2 text-sm font-semibold">{contact.detailsTitle}</h3>
+            <a href={`mailto:${contact.email}`} className="break-all text-sm text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">
+              {contact.email}
+            </a>
+            <p className="mt-1 text-sm text-muted-foreground">{contact.location}</p>
+          </div>
+          <div>
+            <h3 className="mb-2 text-sm font-semibold">{contact.socialTitle}</h3>
+            <div className="flex flex-wrap gap-x-4 gap-y-2">
+              {[contact.linkedin, contact.github].map(({ url, label }) => (
+                <a key={url} href={url} target="_blank" rel="noopener noreferrer" className="text-sm text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">
+                  {label}
+                </a>
+              ))}
             </div>
           </div>
         </div>
-        <div className="xl:col-span-3">
-          <section className="mb-12">
-            <h1 className="text-4xl font-bold mb-6">{about.title}</h1>
-            <div className="prose dark:prose-invert max-w-none">
-              <p className="max-w-prose">
-                {about.bio}
-              </p>
-            </div>
-          </section>
-        </div>
-      </div>
+      </footer>
     </div>
   );
-} 
+}

@@ -6,13 +6,13 @@ interface SkillCategoryProps {
 
 export default function SkillCategory({ title, description, example }: SkillCategoryProps) {
   return (
-    <section className="rounded-lg bg-white p-6 shadow-md dark:bg-gray-800">
-      <h3 className="mb-3 text-xl font-bold">{title}</h3>
-      <p className="text-gray-700 dark:text-gray-300">{description}</p>
+    <section className="py-4 last:pb-0">
+      <h4 className="font-semibold">{title}</h4>
+      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{description}</p>
       {example && (
         <a
           href={example.url}
-          className="mt-3 inline-block text-blue-700 underline dark:text-blue-300"
+          className="mt-1.5 inline-block text-sm text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary"
         >
           {example.label}
         </a>

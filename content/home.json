@@ -1,7 +1,10 @@
 {
     "about": {
-        "title": "About Me",
-        "bio": "I build Python tools for data and reporting and web projects with React and Next.js. My background is in industrial automation and electrical engineering."
+        "eyebrow": "Founder & engineer",
+        "title": "I’m building MiMinions.",
+        "bio": "I started MiMinions to explore how AI agents can work together toward a shared goal. I come to that problem from industrial automation, electrical engineering, and software.",
+        "currentWorkLinkLabel": "What I’m building",
+        "archiveLinkLabel": "Browse the project archive"
     },
     "contact": {
         "title": "Contact",

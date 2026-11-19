@@ -1,17 +1,22 @@
 {
     "language": "en",
     "metadata": {
-        "title": "Sheng Xiong Ding - Portfolio",
-        "description": "Python tools, web projects, and an industrial automation and electrical engineering background."
+        "title": "Sheng Xiong Ding — Founder of MiMinions",
+        "description": "Sheng Xiong Ding is building MiMinions, a platform for organizing AI agents around shared work, and has a background in industrial automation, electrical engineering, and software."
     },
     "profile": {
         "name": "Sheng Xiong Ding (Roland)",
-        "tagline": "Python tools, web development, and industrial automation",
+        "tagline": "Founder of MiMinions",
         "portraitAlt": "Sheng Xiong Ding"
     },
-    "navigation": [
-        { "label": "Home", "href": "/" },
-        { "label": "Projects", "href": "/projects" },
-        { "label": "Skills", "href": "/skills" }
-    ]
+    "navigation": {
+        "title": "Table of contents",
+        "items": [
+            { "label": "About", "href": "/#about" },
+            { "label": "MiMinions", "href": "/#miminions" },
+            { "label": "Projects", "href": "/#projects" },
+            { "label": "Skills", "href": "/#skills" },
+            { "label": "Contact", "href": "/#contact" }
+        ]
+    }
 }
